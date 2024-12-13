@@ -1,18 +1,40 @@
-## Getting Started
+# Floppy Bird
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Welcome to **Floppy Bird**! This project is a simple, fun clone of the classic Flappy Bird game. Remember, **it's Floppy Bird, not Flappy Bird**!
 
-## Folder Structure
+## Table of Contents
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [How to Play](#how-to-play)
 
-The workspace contains two folders by default, where:
+## Introduction
+Floppy Bird is a 2D game where you control a bird trying to fly through obstacles (pipes). The objective is to pass as many pipes as possible without colliding with them or falling to the ground.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Installation
+To run Floppy Bird on your Windows machine, follow these steps:
 
-COPY GAME
+1. **Clone the Repository:**
+    Open Command Prompt and run:
+    ```
+    git clone https://github.com/FakeApollo/FloppyBird_copyCode.git
+    cd floppy-bird
+    ```
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+2. **Compile the Code:**
+    Ensure you have Java Development Kit (JDK) installed. If not, download and install it from the [official website](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
 
-## Dependency Management
+    ```
+    javac App.java FlappyBird.java
+    ```
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+3. **Run the Game:**
+    ```
+    java App
+    ```
+
+## How to Play
+- Press the **Spacebar** to make the bird flap its wings and fly.
+- Avoid the pipes. If the bird collides with a pipe or the ground, it's game over.
+- Your score increases with each pair of pipes you successfully pass.
+
+Enjoy playing Floppy Bird!
