@@ -5,11 +5,11 @@ import java.util.Random;
 import javax.swing.*;
 
 public class FlappyBird extends JPanel implements ActionListener, KeyListener {
-    int boarWidth = 360;
+    int boardWidth = 360;
     int boardHeight = 640;
 
     //Bird
-    int birdX = boarWidth/8;
+    int birdX = boardWidth/8;
     int birdY = boardHeight/2;
     int birdWidth = 34;
     int birdHeight = 24;
@@ -28,7 +28,7 @@ public class FlappyBird extends JPanel implements ActionListener, KeyListener {
 
     //Pipes
 
-    int pipeX = boarWidth;
+    int pipeX = boardWidth;
     int pipeY = 0;
     int pipeWidth = 64; // Scaled bye 1/6
     int pipeHeight = 512;
@@ -70,7 +70,7 @@ public class FlappyBird extends JPanel implements ActionListener, KeyListener {
 
 
     FlappyBird(){
-        setPreferredSize(new Dimension(boarWidth, boardHeight));
+        setPreferredSize(new Dimension(boardWidth, boardHeight));
         //setBackground(Color.blue);
         setFocusable(true);
         addKeyListener(this);
@@ -121,7 +121,7 @@ public class FlappyBird extends JPanel implements ActionListener, KeyListener {
     public void draw(Graphics g){
         
         //BG
-        g.drawImage(backgroundImg, 0, 0, boarWidth, boardHeight, null);
+        g.drawImage(backgroundImg, 0, 0, boardWidth, boardHeight, null);
         //bird
         g.drawImage(bird.img, bird.x, bird.y, bird.width, bird.height, null);
 
