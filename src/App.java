@@ -3,12 +3,12 @@ import javax.swing.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        int boarWidth = 360;
+        int boardWidth = 360;
         int boardHeight = 640;
 
         JFrame frame = new JFrame("Floppy Bird");
         frame.setVisible(true);
-        frame.setSize(boarWidth, boardHeight);
+        frame.setSize(boardWidth, boardHeight);
         frame.setLocationRelativeTo(null);
         frame.setResizable(false);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
